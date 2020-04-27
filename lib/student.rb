@@ -74,7 +74,7 @@ def self.all_students_in_grade_9
        SELECT * FROM students WHERE grade < 12
     SQL
     
-    s = DB[:conn].execute(sql)
+    DB[:conn].execute(sql)
   end
 
 def self.first_X_students_in_grade_10(x)
