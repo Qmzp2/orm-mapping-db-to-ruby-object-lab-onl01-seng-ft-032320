@@ -63,7 +63,7 @@ class Student
   
 def self.all_students_in_grade_9
     sql = <<-SQL
-       "SELECT COUNT(grade = 9) FROM students"
+       SELECT COUNT(grade = 9) FROM students
     SQL
 
     DB[:conn].execute(sql)
